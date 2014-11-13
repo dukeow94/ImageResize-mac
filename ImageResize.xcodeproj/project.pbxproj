@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FD5B2F31A14ED0E005121C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B2F21A14ED0E005121C5 /* main.m */; };
+		5FD5B2F61A14ED0E005121C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B2F51A14ED0E005121C5 /* AppDelegate.m */; };
+		5FD5B2F81A14ED0E005121C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B2F71A14ED0E005121C5 /* Images.xcassets */; };
+		5FD5B2FB1A14ED0E005121C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B2F91A14ED0E005121C5 /* MainMenu.xib */; };
+		5FD5B3141A14EEB3005121C5 /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B3131A14EEB3005121C5 /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FD5B2ED1A14ED0E005121C5 /* ImageResize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageResize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD5B2F11A14ED0E005121C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD5B2F21A14ED0E005121C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FD5B2F41A14ED0E005121C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5FD5B2F51A14ED0E005121C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5FD5B2F71A14ED0E005121C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FD5B2FA1A14ED0E005121C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5FD5B3101A14ED45005121C5 /* PubHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubHeader.h; sourceTree = "<group>"; };
+		5FD5B3121A14EEB3005121C5 /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
+		5FD5B3131A14EEB3005121C5 /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FD5B2EA1A14ED0E005121C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FD5B2E41A14ED0E005121C5 = {
+			isa = PBXGroup;
+			children = (
+				5FD5B2EF1A14ED0E005121C5 /* ImageResize */,
+				5FD5B2EE1A14ED0E005121C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FD5B2EE1A14ED0E005121C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5B2ED1A14ED0E005121C5 /* ImageResize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FD5B2EF1A14ED0E005121C5 /* ImageResize */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5B2F41A14ED0E005121C5 /* AppDelegate.h */,
+				5FD5B2F51A14ED0E005121C5 /* AppDelegate.m */,
+				5FD5B2F71A14ED0E005121C5 /* Images.xcassets */,
+				5FD5B2F91A14ED0E005121C5 /* MainMenu.xib */,
+				5FD5B3101A14ED45005121C5 /* PubHeader.h */,
+				5FD5B3111A14EEB3005121C5 /* openSDK */,
+				5FD5B2F01A14ED0E005121C5 /* Supporting Files */,
+			);
+			path = ImageResize;
+			sourceTree = "<group>";
+		};
+		5FD5B2F01A14ED0E005121C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5B2F11A14ED0E005121C5 /* Info.plist */,
+				5FD5B2F21A14ED0E005121C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FD5B3111A14EEB3005121C5 /* openSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5FD5B3121A14EEB3005121C5 /* NSImage+MGCropExtensions.h */,
+				5FD5B3131A14EEB3005121C5 /* NSImage+MGCropExtensions.m */,
+			);
+			path = openSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FD5B2EC1A14ED0E005121C5 /* ImageResize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD5B30A1A14ED0E005121C5 /* Build configuration list for PBXNativeTarget "ImageResize" */;
+			buildPhases = (
+				5FD5B2E91A14ED0E005121C5 /* Sources */,
+				5FD5B2EA1A14ED0E005121C5 /* Frameworks */,
+				5FD5B2EB1A14ED0E005121C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageResize;
+			productName = ImageResize;
+			productReference = 5FD5B2ED1A14ED0E005121C5 /* ImageResize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FD5B2E51A14ED0E005121C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = www.appcpu.com;
+				TargetAttributes = {
+					5FD5B2EC1A14ED0E005121C5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5FD5B2E81A14ED0E005121C5 /* Build configuration list for PBXProject "ImageResize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FD5B2E41A14ED0E005121C5;
+			productRefGroup = 5FD5B2EE1A14ED0E005121C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FD5B2EC1A14ED0E005121C5 /* ImageResize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FD5B2EB1A14ED0E005121C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD5B2F81A14ED0E005121C5 /* Images.xcassets in Resources */,
+				5FD5B2FB1A14ED0E005121C5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FD5B2E91A14ED0E005121C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD5B2F61A14ED0E005121C5 /* AppDelegate.m in Sources */,
+				5FD5B2F31A14ED0E005121C5 /* main.m in Sources */,
+				5FD5B3141A14EEB3005121C5 /* NSImage+MGCropExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FD5B2F91A14ED0E005121C5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FD5B2FA1A14ED0E005121C5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FD5B3081A14ED0E005121C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5FD5B3091A14ED0E005121C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FD5B30B1A14ED0E005121C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ImageResize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FD5B30C1A14ED0E005121C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ImageResize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FD5B2E81A14ED0E005121C5 /* Build configuration list for PBXProject "ImageResize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD5B3081A14ED0E005121C5 /* Debug */,
+				5FD5B3091A14ED0E005121C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FD5B30A1A14ED0E005121C5 /* Build configuration list for PBXNativeTarget "ImageResize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD5B30B1A14ED0E005121C5 /* Debug */,
+				5FD5B30C1A14ED0E005121C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FD5B2E51A14ED0E005121C5 /* Project object */;
+}
