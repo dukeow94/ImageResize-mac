@@ -96,11 +96,21 @@ enum{
             NSSize targetSize = NSMakeSize(num.intValue/2.0, num.intValue/2.0);
             NSImage* resultImg = [sourceImage imageToFitSize:targetSize method:MGImageResizeScale];
             
-            NSData *imageData = [resultImg  TIFFRepresentation];
-            NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:imageData];
-            NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:0.9] forKey:NSImageCompressionFactor];
-            imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
-            [imageData writeToFile:[NSString stringWithFormat:@"%@/Icon-%d.png",_tfdirPath.stringValue,num.intValue] atomically:NO];
+            //save as jpeg
+//            NSData *imageData = [resultImg  TIFFRepresentation];
+//            NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:imageData];
+//            NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:0.9] forKey:NSImageCompressionFactor];
+//            imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
+//            [imageData writeToFile:[NSString stringWithFormat:@"%@/Icon-%d.jpg",_tfdirPath.stringValue,num.intValue] atomically:NO];
+            
+            
+            
+            //save as png
+            CGImageRef cgRef = [resultImg CGImageForProposedRect:NULL  context:nil  hints:nil];
+            NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
+            [newRep setSize:[resultImg size]];   // if you want the same resolution
+            NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+            [pngData writeToFile:[NSString stringWithFormat:@"%@/Icon-%d.png",_tfdirPath.stringValue,num.intValue] atomically:YES];
         }
         
         
