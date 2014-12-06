@@ -17,6 +17,6 @@ You can down app [here][1]
 ![2][3]
 
 
-  [1]: https://raw.githubusercontent.com/ygweric/ImageResize-mac/master/ImageResize.app
+  [1]: https://raw.githubusercontent.com/ygweric/ImageResize-mac/master/ImageResize.app.zip
   [2]: https://raw.githubusercontent.com/ygweric/ImageResize-mac/master/screenshot/1.png
   [3]: https://raw.githubusercontent.com/ygweric/ImageResize-mac/master/screenshot/2.png
