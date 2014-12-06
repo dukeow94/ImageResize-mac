@@ -29,6 +29,7 @@ enum{
 
 @property (weak) IBOutlet NSTextField *tfSrcPath;
 @property (weak) IBOutlet NSTextField *tfdirPath;
+@property (weak) IBOutlet NSTextField *tfSize;
 - (IBAction)run:(id)sender;
 - (IBAction)chooseSrcFile:(id)sender;
 - (IBAction)chooseDirFile:(id)sender;
@@ -68,27 +69,15 @@ enum{
     
     if (_tfSrcPath.stringValue!=nil
         && ![@"" isEqualToString:_tfSrcPath.stringValue]) {
-        //todo here
-        NSArray* sizes=@[
-                         [NSNumber numberWithInt:16],
-                         [NSNumber numberWithInt:28],
-                         [NSNumber numberWithInt:29],
-                         [NSNumber numberWithInt:40],
-                         [NSNumber numberWithInt:50],
-                         [NSNumber numberWithInt:57],
-                         [NSNumber numberWithInt:58],
-                         [NSNumber numberWithInt:72],
-                         [NSNumber numberWithInt:76],
-                         [NSNumber numberWithInt:80],
-                         [NSNumber numberWithInt:100],
-                         [NSNumber numberWithInt:108],
-                         [NSNumber numberWithInt:114],
-                         [NSNumber numberWithInt:120],
-                         [NSNumber numberWithInt:144],
-                         [NSNumber numberWithInt:152],
-                         [NSNumber numberWithInt:512],
-                        ];
-        for (NSNumber* num in sizes) {
+       
+        if (_tfSize.stringValue==nil
+            || [@"" isEqualToString:_tfSize.stringValue]) {
+            return;
+        }
+        NSArray* sizes=[_tfSize.stringValue componentsSeparatedByString:@","];
+        
+       
+        for (NSString* num in sizes) {
             NSImage* sourceImage=[[NSImage alloc]initWithContentsOfFile:_tfSrcPath.stringValue];
             
             //FIXME
