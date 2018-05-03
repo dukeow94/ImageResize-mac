@@ -82,7 +82,9 @@ enum{
             
             //FIXME
             // widht and height must divided by 2.0, or we will get @2x size
-            NSSize targetSize = NSMakeSize(num.intValue/2.0, num.intValue/2.0);
+            NSSize imageSize = sourceImage.size;
+            CGFloat ratio = num.intValue / imageSize.width;
+            NSSize targetSize = NSMakeSize(num.intValue/2.0, imageSize.height * ratio / 2.0);
             NSImage* resultImg = [sourceImage imageToFitSize:targetSize method:MGImageResizeScale];
             
             //save as jpeg
@@ -91,8 +93,6 @@ enum{
 //            NSDictionary *imageProps = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:0.9] forKey:NSImageCompressionFactor];
 //            imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
 //            [imageData writeToFile:[NSString stringWithFormat:@"%@/Icon-%d.jpg",_tfdirPath.stringValue,num.intValue] atomically:NO];
-            
-            
             
             //save as png
             CGImageRef cgRef = [resultImg CGImageForProposedRect:NULL  context:nil  hints:nil];
